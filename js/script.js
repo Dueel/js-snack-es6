@@ -75,14 +75,29 @@ function es3(){
     return teams
 }
 
+function es4(){
+     
+    let teams = es3();
+    let newArray = [];
 
+    for (let i = 0; i < teams.length; i++){
+
+        let {name, fouls} = teams[i];
+        let obj = {name,fouls}
+
+        newArray.push(obj)
+    }
+
+    console.log(newArray);
+
+}
 
 function init(){
 
     // es1();
     // es2();
-    es3();
-
+    // es3();
+    es4();
 }
 
 $(document).ready(init)
